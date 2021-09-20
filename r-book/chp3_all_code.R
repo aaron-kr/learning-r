@@ -1,4 +1,4 @@
-# File:     0205_entering_data.R
+# File:     03_data_types_operators.R
 # Project:  Learning R
 
 # Data Types ####
@@ -352,7 +352,7 @@ x
 
 # Making Functions ####
 
-getCircleArea <- function(r)
+getCircleArea <- function(r) {
   area = 3.14 * r^2
   return(area)
 }
