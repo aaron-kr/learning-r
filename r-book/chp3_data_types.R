@@ -1,5 +1,5 @@
-# File:     chp3_all_code.R
-# Project:  Learning R (Book)
+# File:     03_data_types.R
+# Project:  Learning R
 
 # Data Types ####
 
