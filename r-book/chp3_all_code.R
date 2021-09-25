@@ -1,5 +1,5 @@
-# File:     0205_entering_data.R
-# Project:  Learning R
+# File:     chp3_all_code.R
+# Project:  Learning R (Book)
 
 # Data Types ####
 
@@ -159,9 +159,9 @@ sum(x) # 55
 
 mean(x) # 5
 
-var(x) # 9.166667 x ????????? ?????? ????????? ??????
+var(x) # 9.166667 x ????????? ?????? ????????? ?????? (variance)
 
-sd(x) # 3.02765 x ????????? ?????? ????????? ????????????
+sd(x) # 3.02765 x ????????? ?????? ????????? ???????????? (standard deviation)
 
 sqrt(x) # calcs EACH value's sqrt() - 10 different values
 
@@ -295,6 +295,7 @@ x
 x[1, 'age'] <- 22 # same as above, but by col name, not num
 x
 
+# str() = structure
 str(x) # shows data type - all data = Factor w / X levels, except 'age'
 
 x[3] <- lapply(x[3], as.character) # change address col to char (not Factor)
@@ -316,7 +317,7 @@ tail(quakes, n=6) # read in end of dataset to 6 rows
 
 names(quakes) # get the column names
 
-str(quakes) # find the data types in each column of the data.frame
+str(quakes) # find the structure of the data.frame
 
 dim(quakes) # 1000 5 (rows, cols)
 
@@ -343,6 +344,7 @@ x <- read.csv('c:/temp/quakes.txt', header=T) # header = TRUE
 x
 
 # also, above, sep='\r' for returns as sep, or read.table('...', sep=',')
+# default sep=',', can also use sep='\t' for tabs
 
 x <- read.csv(file.choose(), header=T) # allow ability to CHOOSE the file to open
 
@@ -352,7 +354,9 @@ x
 
 # Making Functions ####
 
-getCircleArea <- function(r)
+# 2?????? ??????: Create surface of torus, volume of torus functions
+
+getCircleArea <- function(r) {
   area = 3.14 * r^2
   return(area)
 }
