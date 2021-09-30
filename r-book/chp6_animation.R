@@ -81,15 +81,15 @@ while(TRUE) { # Wait for ESC
 library(animation)
 library(png)
 
-ani.options(interval = 0.5)
+ani.options(interval = 0.01)
 
 plot.new()
 
 rect(0,0,1,1,col='white')
 
-for(i in 1:6) {
+for(i in 1:4) {
   
-  img <- paste('C://temp/ball',i,'.png',sep='')
+  img <- paste('D:/Desktop/Dev/learning-r/img/sonic',i,'.png',sep='')
   
   img <- readPNG(img)
   
