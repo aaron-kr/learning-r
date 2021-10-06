@@ -3,7 +3,7 @@
 
 # Countdown ####
 
-install.packages('animation')
+install.packages('animation') # investigate imager and magick
 library(animation)
 
 ani.options(interval = 1)
@@ -62,6 +62,15 @@ for(i in x) {
 }
 print(sum)
 
+sum <- 0
+x <- seq(1,10)
+repeat(i in x) {
+  sum <- sum + i
+  if(sum > 10)
+    break
+}
+print(sum)
+
 # Animated Chart ####
 
 library(animation)
@@ -101,7 +110,7 @@ for(i in 1:4) {
 
 dev.off() # device off (PNG I guess?)
 
-# Homework = Animate your own image I think?
+# Homework = 
 
 # Clean Up ####
 

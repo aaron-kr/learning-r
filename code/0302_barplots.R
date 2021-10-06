@@ -26,6 +26,8 @@ diamonds %>%
   select(color) %>%
   plot()
 
+plot(diamonds, )
+
 # But barplot() with pipes doesn't work
 diamonds %>%
   select(clarity) %>%

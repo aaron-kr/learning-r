@@ -17,6 +17,7 @@ pie(x, labels=label, main='Workplace')
 ### Change Angle ----
 
 pie(x, init.angle=90, labels=label, main="Workplace Angle")
+pie(x, init.angle=90, labels=label, main="Workplace Angle")
 
 ### Add %, Change Color ----
 pct <- round(x/sum(x)*100) # calc percentages
@@ -60,7 +61,7 @@ barplot(height, names.arg=name, main="Workplace Rainbow", col=rainbow(length(hei
 bp <- barplot(height, names.arg=name, main="Workplace Rainbow", col=rainbow(length(height)), xlab="Dept", ylab="USD (mil)", ylim=c(0,25))
 text(x=bp, y=height, labels=round(height, 0), pos=3)
 
-text(x=bp, y=height, labels=round(height, 0), pos=1)
+text(x=bp, y=height, labels=round(height, 0), pos=2)
 
 ### Horizontal ----
 

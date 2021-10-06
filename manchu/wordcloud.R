@@ -3,11 +3,16 @@ install.packages("multilinguer")
 #install_jdk()
 install.packages(c('stringr','hash','tau','Sejong','RSQLite',
                    'devtools'), type="binary")
-install.packages("remotes")
+#install.packages("remotes")
 remotes::install_github('haven-jeon/KoNLP',upgrade="never",
                         INSTALL_opts=c("--no-multiarch"))
 install.packages("RColorBrewer")
 install.packages("wordcloud")
+
+# This R shell doesn't contain any Hangul encoding.
+# For fully use, any of 'UTF-8', 'CP949', 'EUC-KR' needs to be used for R shell encoding.
+# https://ko-kr.facebook.com/groups/krstudy/permalink/709372189237056/
+Sys.setlocale("LC_ALL", "ko_KR.UTF-8")
 
 library('rJava')
 library(KoNLP)
@@ -20,7 +25,7 @@ useNIADic()
 
 pal2 <- brewer.pal(8,"Dark2")   
 
-text <- readLines(file.choose())
+text <- readLines(file.choose(), encoding = "UTF-8")
 text 
 noun<-sapply(text,extractNoun,USE.NAMES=F)
 noun
