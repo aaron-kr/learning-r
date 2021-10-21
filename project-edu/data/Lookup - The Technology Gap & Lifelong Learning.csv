@@ -1,0 +1,55 @@
+Column,Question
+time,Timestamp
+nation,I am a
+job,I teach at a
+location,I live in
+att_learning,1) People who continue to learn into adulthood are less likely to lose their jobs.
+att_work,"2) To be successful at work, you must constantly improve your knowledge and skills."
+att_employers,3) Employers are responsible for the training of their employees.
+att_me,"4) It is my responsibility to take a personal role in my own continuing education (by reading books, taking online courses, attending trainings and conferences, etc.)"
+att_school,5) You cannot learn the skills you need at work in school.
+att_life,6) Education and training help you lead a better daily life.
+att_enjoyable,7) Learning new things is very enjoyable.
+att_confidence,8) You can gain confidence through learning.
+att_pay,9) Adult learners must be prepared to pay something for their learning.
+att_covid,10) My attitude toward lifelong learning has changed as a result of the COVID-19 pandemic.
+pdc_diverse,1) I am familiar with digital tools that can help diversify teaching.
+pdc_confidence,"2) I am, in general, confident when using digital tools."
+pdc_familiarity,3) I find it easy to become familiar with new digital tools.
+pdc_appropriate,4) I can use digital tools that are appropriate for the aspects of the subjects I am teaching.
+pdc_difficult,5) It is difficult to use digital tools as an educational resource within my subject. REV.
+pdc_adjust,"6) When I am using digital tools, it is difficult to adjust the content to the individual student’s needs. REV."
+pdc_outcome,7) I have no clear idea of the learning outcome when using digital tools in my teaching. REV.
+pdc_feedback,8) I use digital tools when giving feedback to students.
+pdc_students,9) My students are more knowledgeable about digital tools for education than I am.
+pdc_covid,10) The COVID-19 pandemic has caused me to learn more about digital tools for education.
+pro_teaching,"1) When I use digital tools in my teaching, I find it adds value."
+pro_essential,2) The use of digital tools is essential for good teaching.
+pro_society,3) Society’s expectations of the impact of digital tools are exaggerated. REV.
+pro_expectations,4) Expectations related to the use of digital tools in education frustrate me. REV.
+pro_organization,"5) In professional debates at our organization, the expectations of the impact of digital tools are exaggerated. REV."
+pro_disruptive,6) The use of digital tools is disruptive for the relationship between student and teacher. REV.
+pro_interest,7) Digital tools can make the students more interested in the subject I am teaching.
+pro_testing,8) I like testing new digital tools in my teaching.
+pro_struggling,9) I feel like I am constantly struggling with learning or using new digital tools for education.
+pro_education,10) Teachers need continuing education about technology.
+tools_testing,1) Digital tools for testing with multiple choice questions
+tools_lms,"2) Moodle, Canvas, Fronter, Google Classroom, or your own schools’s LMS (learning management system)"
+tools_ppt,3) Digital tools for presentation (like PowerPoint or Prezi)
+tools_doc,4) Word processor (like Hangul or Word)
+tools_xls,5) Spreadsheets (like Excel)
+tools_video,6) Use of video in class or assignments
+tools_youtube,7) Creating a film/video/animation
+tools_discussions,8) Online discussions for class
+tools_zoom,"9) Online meetings (like Zoom, Webex, Google Meet, Lync, Adobe Connect, or Skype)"
+tools_wiki,10) Production of a Wiki (website that allows collaborative modification) 
+tools_obs,"11) Video screen capture (like Camtasia, OBS, or Mediasite)"
+tools_science,12) Programs for scientific analyses
+tools_responses,"13) Student response systems (online questions answered by phone or computers, like Kahoot! or Socrative)"
+tools_collab,14) Tools for collaborative writing (like Google Docs or Google Slides)
+tools_sns,"15) Social media (like Facebook, Twitter, or KakaoTalk) for class"
+tools_internet,16) The Internet as a source of knowledge
+tools_audio,"17) Audio recording or editing programs (like Audacity, GarageBand, or Adobe Audition)"
+tools_blog,"18) Production of a class website or blog (like Google Sites, WordPress, Medium, or Naver cafe)"
+tools_before,"19) Amount of time, effort, or digital tools I used BEFORE the COVID-19 pandemic."
+tools_after,"20) Amount of time, effort, or digital tools I NOW use or will continue to use during and after the COVID-19 pandemic."
