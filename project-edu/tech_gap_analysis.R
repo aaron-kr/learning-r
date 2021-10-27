@@ -121,15 +121,15 @@ func_likert_att(results_non)
 
 #### Grouping ------------------------------------------------------------------
 
-att_g <- likert(att, grouping = results$nation)
+att_g <- likert(att, grouping = results$job)
 str(att_g)
 
 att_g_likert <- likert(summary = att_g$results, grouping = att_g$results[,1])
 str(att_g_likert)
 
-knitr::opts_chunk$set(fig.height = knitr::opts_chunk$get('fig.height')*2)
+# knitr::opts_chunk$set(fig.height = knitr::opts_chunk$get('fig.height')*2)
 
-plot(att_g_likert$results[,4]) +
+plot(att_g_likert) +
   ggtitle('Attitudes Toward Lifelong Learning (평생학습에 대한 태도)', subtitle = 'Survey Results (74 respondents)')
 
 ### 2. Competence ==============================================================
@@ -179,6 +179,22 @@ func_likert_pdc <- function(df) {
 
 func_likert_pdc(results)
 
+#### Grouping ------------------------------------------------------------------
+
+pdc <- results[, substr(names(results), 1,4) == 'pdc_']
+
+pdc_g <- likert(pdc, grouping = results$nation)
+str(pdc_g)
+
+pdc_g_likert <- likert(summary = pdc_g$results, grouping = pdc_g$results[,1])
+str(pdc_g_likert)
+
+# knitr::opts_chunk$set(fig.height = knitr::opts_chunk$get('fig.height')*2)
+
+plot(pdc_g_likert) +
+  ggtitle('Professional Digital Competence (전문 디지털 역량)', subtitle = 'Survey Results (74 respondents)')
+
+
 ### 3. Professionalism =========================================================
 
 func_likert_pro <- function(df) {
@@ -225,6 +241,22 @@ func_likert_pro <- function(df) {
 #### Multiple Graphs -----------------------------------------------------------
 
 func_likert_pro(results)
+
+#### Grouping ------------------------------------------------------------------
+
+pro <- results[, substr(names(results), 1,4) == 'pro_']
+
+pro_g <- likert(pro, grouping = results$nation)
+str(pro_g)
+
+pro_g_likert <- likert(summary = pro_g$results, grouping = pro_g$results[,1])
+str(pro_g_likert)
+
+# knitr::opts_chunk$set(fig.height = knitr::opts_chunk$get('fig.height')*2)
+
+plot(pro_g_likert) +
+  ggtitle('Professional Attitude (전문적인 태도)', subtitle = 'Survey Results (74 respondents)')
+
 
 ### 4. Tools ===================================================================
 
@@ -288,6 +320,20 @@ str(tools_likert)
 plot(tools_likert) +
   ggtitle('Professional Application of Tools (도구의 전문적인 응용)', subtitle = 'Survey Results (74 respondents)')
 
+#### Grouping ------------------------------------------------------------------
+
+tools_g <- likert(tools, grouping = results$nation)
+str(tools_g)
+
+tools_g_likert <- likert(summary = tools_g$results, grouping = tools_g$results[,1])
+str(tools_g_likert)
+
+# knitr::opts_chunk$set(fig.height = knitr::opts_chunk$get('fig.height')*2)
+
+# This works, but not much space for showing it.
+plot(tools_g_likert) +
+  ggtitle('Professional Application of Tools (도구의 전문적인 응용)', subtitle = 'Survey Results (74 respondents)')
+
 ### 5. Time Spent ==============================================================
 
 head(time)
@@ -306,4 +352,17 @@ time_likert <- likert(summary = time_likert$results)
 str(time_likert)
 
 plot(time_likert) +
+  ggtitle('Time, Effort, Tools (시간, 능력, 도구)', subtitle = 'Survey Results (74 respondents)')
+
+#### Grouping ------------------------------------------------------------------
+
+time_g <- likert(time, grouping = results$nation)
+str(time_g)
+
+time_g_likert <- likert(summary = time_g$results, grouping = time_g$results[,1])
+str(time_g_likert)
+
+# knitr::opts_chunk$set(fig.height = knitr::opts_chunk$get('fig.height')*2)
+
+plot(time_g_likert) +
   ggtitle('Time, Effort, Tools (시간, 능력, 도구)', subtitle = 'Survey Results (74 respondents)')

@@ -1,6 +1,7 @@
 # Lifelong Learning Analysis
 
 install.packages('ggthemes')
+library('tidyverse')
 
 ## KO Data: Attitudes ##########################################################
 attitudes <- read.csv(file.choose())

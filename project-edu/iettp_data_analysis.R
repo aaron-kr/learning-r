@@ -403,12 +403,12 @@ install.packages('ggthemes')
 # theme_solarized(), theme_excel(), theme_wsj(), theme_economist(), theme_fivethirtyeight()
 
 ggplot(data = all) +
-  geom_bar(mapping = aes(x = comfort_level, fill = grade)) + # Comfort Level
+  geom_bar(mapping = aes(x = current_use, fill = grade)) + # Comfort Level
   theme_bw() +
-  ylab('Number of respondents') + 
+  ylab('Number of teachers') + 
   xlab('Comfort Level with Technology in School') +
   ylim(0,60) +
-  scale_fill_manual(values = c('purple', 'green'),
+  scale_fill_manual(values = c("#C3D7A4", "#4E84C4"),
                     guide = guide_legend(title = 'School Type',
                                          nrow = 1,
                                          label.position = 'bottom',
