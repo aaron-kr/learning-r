@@ -62,11 +62,14 @@ for(i in x) {
 }
 print(sum)
 
+## repeat ====
+
 sum <- 0
 x <- seq(1,10)
-repeat(i in x) {
+repeat {
   sum <- sum + i
-  if(sum > 10)
+  i <- i + 1
+  if(i > 10)
     break
 }
 print(sum)
@@ -83,6 +86,31 @@ while(TRUE) { # Wait for ESC
   barplot(y, ylim=c(0,1), col=rainbow(5))
   
   ani.pause()
+}
+
+## Coin toss bar graph ====
+
+plot.new()
+
+count <- c(0,0,0)
+for (n in 1:500) {
+  coin <- sample(c(0,1), 2, replace = T)
+  
+  index <- sum(coin) + 1
+  count[index] <- count[index] + 1
+  
+  probability <- count / n
+  
+  title <- paste('Repetition: ', n, "/500")
+  
+  barplot(probability,
+          names.arg = c(0,1,2),
+          xlab = 'Number on the front',
+          ylab = 'Rate',
+          col = rainbow(3),
+          main = title)
+  
+  Sys.sleep(0.05)
 }
 
 # Animated Picture ####
